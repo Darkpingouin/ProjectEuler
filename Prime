@@ -1,0 +1,13 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-   
+
+def my_prime(nb):
+    mul = 2
+    while (nb != 1):
+        if (nb % mul == 0):
+            nb = nb / mul
+        else:
+            mul+=1
+    print mul
+
+my_prime(600851475143)
