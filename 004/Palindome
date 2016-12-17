@@ -1,0 +1,25 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-   
+
+def is_pal(nb):
+    s = str(nb)
+    start = 0
+    end = len(s)-1
+    while (start < end):
+        if (s[start] != s[end]):
+            return False
+        end-=1
+        start+=1
+    return True
+
+x = 100
+max_pal = 0
+while (x < 1000):
+    y = 101
+    while (y < 1000):
+        nb = x * y
+        if (is_pal(nb) and nb > max_pal):
+            max_pal = nb
+        y+=1
+    x+=1
+print max_pal
