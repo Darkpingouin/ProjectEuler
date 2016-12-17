@@ -1,0 +1,19 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-   
+
+def is_prime(nb):
+    for x in range(2, nb):
+        if (nb % x == 0):
+            return False
+    print nb
+    return True
+
+
+total = 0
+nb = 2
+while (total != 10001):
+    if (is_prime(nb)):
+        print "total " + str(total)
+        total += 1
+    nb+=1
+
