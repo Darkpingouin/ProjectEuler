@@ -1,0 +1,18 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-   
+
+
+a = 1
+b = 2
+#because on 2 is even
+total = 2
+stop = True
+while stop:
+    tmp = a + b
+    a = b
+    b = tmp
+    if (b >= 4000000):
+        stop = False
+    if (tmp % 2 == 0):
+        total += tmp
+print total
