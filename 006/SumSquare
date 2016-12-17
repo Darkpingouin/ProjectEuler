@@ -1,0 +1,16 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-   
+
+def sum_square(nb):
+    total = 0
+    for x in range(nb + 1):
+        total += pow(x, 2)
+    return total
+
+def square_sum(nb):
+    total = 0
+    for x in range(nb + 1):
+        total += x
+    return pow(total, 2)
+
+print square_sum(100) - sum_square(100)
